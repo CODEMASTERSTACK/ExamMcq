@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-portal.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Portal</h1>
+    </header>
+
+    <main>
+        <section id="add-subject-section">
+            <h2>Add Subject</h2>
+            <input type="text" id="subject-input" placeholder="Enter subject name">
+            <button id="add-subject">Add Subject</button>
+        </section>
+
+        <section id="subject-list-section">
+            <h2>Manage Subjects</h2>
+            <ul id="subject-list-admin">
+                <!-- Subjects will be listed here dynamically -->
+            </ul>
+        </section>
+
+        <section id="manage-mcqs" style="display: none;">
+            <h2>Manage MCQs for <span id="current-subject"></span></h2>
+            <div>
+                <input type="text" id="mcq-question" placeholder="Question">
+                <input type="text" id="mcq-option1" placeholder="Option 1">
+                <input type="text" id="mcq-option2" placeholder="Option 2">
+                <input type="text" id="mcq-option3" placeholder="Option 3">
+                <input type="text" id="mcq-option4" placeholder="Option 4">
+                <input type="text" id="mcq-correct-answer" placeholder="Correct Answer">
+                <button id="add-mcq">Add MCQ</button>
+            </div>
+            <ul id="mcq-list">
+                <!-- MCQs will be listed here -->
+            </ul>
+        </section>
+
+        <section id="complaints-section">
+            <h2>Complaints</h2>
+            <ul id="complaints-list">
+                <!-- Complaints will be listed here dynamically -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

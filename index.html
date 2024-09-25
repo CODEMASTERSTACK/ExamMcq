@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mcq-platform.css">
+</head>
+<body>
+    <div id="greeting-overlay" class="overlay">
+        <div class="greeting-content">
+            <h1 id="greeting-text">Hello, Student!</h1>
+            <div id="name-input-container" style="display: none;">
+                <input type="text" id="name-input" placeholder="Enter your name">
+                <button id="submit-name">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>QuizMaster</h1>
+        <p id="user-greeting"></p>
+    </header>
+
+    <main>
+        <section id="subject-section">
+            <h2>Choose Your Subject</h2>
+            <ul id="subject-list">
+                <!-- Subjects will be listed here dynamically -->
+            </ul>
+        </section>
+
+        <section id="mcq-section" style="display: none;">
+            <h2 id="subject-title"></h2>
+            <div id="mcq-content">
+                <!-- MCQs will appear here -->
+            </div>
+            <button id="submit-mcq">Submit Answer</button>
+            <button id="next-mcq" style="display: none;">Next Question</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</body>
+</html>
